@@ -48,7 +48,7 @@ const switchPlayers = function () {
 rollDiceBtn.addEventListener('click', function () {
   const dicenum = Math.trunc(Math.random() * 6) + 1;
   diceEle.classList.remove('hidden');
-  diceEle.src = `/Code from video course/07-Pig-Game/starter/imgs/dice-${dicenum}.png`;
+  diceEle.src = `/PIG-GAME/imgs/dice-${dicenum}.png`;
   if (dicenum !== 1) {
     currentScore += dicenum;
     // Building id dynamically
@@ -66,7 +66,7 @@ holdButton.addEventListener('click', function () {
     scores[activePlayer];
 
   // check if player scr is 100,thn finish the game
-  if (scores[activePlayer] >= 15) {
+  if (scores[activePlayer] >= 100) {
     document
       .querySelector(`.player--${activePlayer}`)
       .classList.add('player--winner');

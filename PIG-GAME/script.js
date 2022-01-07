@@ -48,7 +48,7 @@ const switchPlayers = function () {
 rollDiceBtn.addEventListener('click', function () {
   const dicenum = Math.trunc(Math.random() * 6) + 1;
   diceEle.classList.remove('hidden');
-  diceEle.src = `/PIG-GAME/imgs/dice-${dicenum}.png`;
+  diceEle.src = `./PIG-GAME/imgs/dice-${dicenum}.png`;
   if (dicenum !== 1) {
     currentScore += dicenum;
     // Building id dynamically
